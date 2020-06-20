@@ -1,0 +1,16 @@
+{
+    "name": "bayzet/brain-games",
+    "description": "this package is Hexlet study for maintainer vacancy",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Tlyupov Bayzet",
+            "email": "baizet01@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "bin": [
+        "bin/brain-games"
+    ]
+}
