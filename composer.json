@@ -11,7 +11,9 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "wp-cli/php-cli-tools": "^0.11.11"
+        "wp-cli/php-cli-tools": "^0.11.11",
+        "symfony/yaml": "^5.1.2",
+        "symfony/translation": "^5.1.2"
     },
     "bin": [
         "bin/brain-games"
