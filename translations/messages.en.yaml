@@ -1,7 +1,13 @@
+# Brain Games
 Welcome to the Brain Game!: Welcome to the Brain Game!
 May I have your name?: May I have your name?
 Hello, %username%!: Hello, %username%!
-Question: Question
+'Question: %number%': 'Question: %number%'
 Your answer: Your answer
 Correct!: Correct!
 Congratulations, %username%!: Congratulations, %username%!
+
+# Brain Even
+Answer %R"yes" %Wif the number is even, otherwise answer %R"no"%W.%n: Answer %R"yes" %Wif the number is even, otherwise answer %R"no"%W.%n
+'%R"yes" %W is wrong answer ;(. Correct answer was %R"no"%W.%n': '%R"yes" %W is wrong answer ;(. Correct answer was %R"no"%W.%n'
+Let's try again, %username%!: Let's try again, %username%!

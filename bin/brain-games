@@ -2,8 +2,10 @@
 
 <?php
 
-require_once __DIR__ . '/../vendor/autoload.php';
+//require_once __DIR__ . '/../vendor/autoload.php';
+//
+//use function Brain\Games\Cli\run;
+//
+//run();
 
-use function Brain\Games\Cli\run;
-
-run();
+print_r($argv);

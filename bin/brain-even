@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+
+<?php
+
+require_once __DIR__ . '/../config/bootstrap.php';
+
+use Brain\Games\Cli\Controller\BrainEven;
+
+$game = new BrainEven($translator);
+$game->run();
