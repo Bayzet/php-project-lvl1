@@ -4,7 +4,14 @@
  * In this Bootstrap, the autoload file is connected and the translations are selected
  */
 
-require_once __DIR__ . '/../vendor/autoload.php';
+$globalModeAutoloadPath = __DIR__ . '/../../../autoload.php';
+$devModeAutoloadPath = __DIR__ . '/../vendor/autoload.php';
+
+if (file_exists($devModeAutoloadPath)) {
+    require_once $devModeAutoloadPath;
+} else {
+    require_once $globalModeAutoloadPath;
+}
 
 use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Translation\Translator;
