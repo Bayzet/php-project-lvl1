@@ -28,3 +28,9 @@ export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 [![asciicast](https://asciinema.org/a/0qPyBxP6UWKWvCOEXAubkZhv0.svg)](https://asciinema.org/a/0qPyBxP6UWKWvCOEXAubkZhv0)
 - Русская версия
 [![asciicast](https://asciinema.org/a/UsCcFPDUp13biTGYKrI0omijR.svg)](https://asciinema.org/a/UsCcFPDUp13biTGYKrI0omijR)
+
+Игра BrainGcd
+- Английская версия
+[![asciicast](https://asciinema.org/a/IMXcxDGRqgkl2cfGe883VTnok.svg)](https://asciinema.org/a/IMXcxDGRqgkl2cfGe883VTnok)
+- Русская версия
+[![asciicast](https://asciinema.org/a/nrDKVLpH3agxvevVZszxNnVcS.svg)](https://asciinema.org/a/nrDKVLpH3agxvevVZszxNnVcS)
