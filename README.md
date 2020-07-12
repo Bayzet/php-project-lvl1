@@ -18,25 +18,31 @@ export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 
 ## Игровой процесс
 Игра BrainEven
-- Английская версия
+- Английская версия  
 [![asciicast](https://asciinema.org/a/VfucB8MVlPyEMLWnVJkfB7RwB.svg)](https://asciinema.org/a/VfucB8MVlPyEMLWnVJkfB7RwB)
-- Русская версия
+- Русская версия  
 [![asciicast](https://asciinema.org/a/yAkhnNYct6Ll2neVwp6deXljD.svg)](https://asciinema.org/a/yAkhnNYct6Ll2neVwp6deXljD)
 
 Игра BrainCalc
-- Английская версия
+- Английская версия  
 [![asciicast](https://asciinema.org/a/0qPyBxP6UWKWvCOEXAubkZhv0.svg)](https://asciinema.org/a/0qPyBxP6UWKWvCOEXAubkZhv0)
-- Русская версия
+- Русская версия  
 [![asciicast](https://asciinema.org/a/UsCcFPDUp13biTGYKrI0omijR.svg)](https://asciinema.org/a/UsCcFPDUp13biTGYKrI0omijR)
 
 Игра BrainGcd
-- Английская версия
+- Английская версия  
 [![asciicast](https://asciinema.org/a/IMXcxDGRqgkl2cfGe883VTnok.svg)](https://asciinema.org/a/IMXcxDGRqgkl2cfGe883VTnok)
-- Русская версия
+- Русская версия  
 [![asciicast](https://asciinema.org/a/nrDKVLpH3agxvevVZszxNnVcS.svg)](https://asciinema.org/a/nrDKVLpH3agxvevVZszxNnVcS)
 
 Игра Brain Progression
-- Английская версия
+- Английская версия  
 [![asciicast](https://asciinema.org/a/oHEgZSAMuhjcrWlyDm5fcy0vu.svg)](https://asciinema.org/a/oHEgZSAMuhjcrWlyDm5fcy0vu)
-- Русская версия
+- Русская версия  
 [![asciicast](https://asciinema.org/a/FYDUpdWsoKUV4JUTSInScVu8n.svg)](https://asciinema.org/a/FYDUpdWsoKUV4JUTSInScVu8n)
+
+Игра Brain Prime
+- Английская версия  
+[![asciicast](https://asciinema.org/a/1ihtsLkmEHMyAYS7DV58yM6VA.svg)](https://asciinema.org/a/1ihtsLkmEHMyAYS7DV58yM6VA)
+- Русская версия  
+[![asciicast](https://asciinema.org/a/hY9sJ1AnD7vxsKcEFmpN9Sy2l.svg)](https://asciinema.org/a/hY9sJ1AnD7vxsKcEFmpN9Sy2l)
