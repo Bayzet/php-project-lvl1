@@ -34,3 +34,9 @@ export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 [![asciicast](https://asciinema.org/a/IMXcxDGRqgkl2cfGe883VTnok.svg)](https://asciinema.org/a/IMXcxDGRqgkl2cfGe883VTnok)
 - Русская версия
 [![asciicast](https://asciinema.org/a/nrDKVLpH3agxvevVZszxNnVcS.svg)](https://asciinema.org/a/nrDKVLpH3agxvevVZszxNnVcS)
+
+Игра Brain Progression
+- Английская версия
+[![asciicast](https://asciinema.org/a/oHEgZSAMuhjcrWlyDm5fcy0vu.svg)](https://asciinema.org/a/oHEgZSAMuhjcrWlyDm5fcy0vu)
+- Русская версия
+[![asciicast](https://asciinema.org/a/FYDUpdWsoKUV4JUTSInScVu8n.svg)](https://asciinema.org/a/FYDUpdWsoKUV4JUTSInScVu8n)
