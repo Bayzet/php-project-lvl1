@@ -6,7 +6,7 @@ Hello, %username%!: Hello, %username%!
 Your answer: Your answer
 Correct!: Correct!
 Congratulations, %username%!: Congratulations, %username%!
-'%R"%wrong%" %W is wrong answer ;(. Correct answer was %R"%correct%"%W.%n': '%R"%wrong%" %W is wrong answer ;(. Correct answer was %R"%correct%"%W.%n'
+'%R"%wrong%"%W is wrong answer ;(. Correct answer was %R"%correct%"%W.%n': '%R"%wrong%" %Wis wrong answer ;(. Correct answer was %R"%correct%"%W.%n'
 Let's try again, %username%!: Let's try again, %username%!
 
 # Brain Even
@@ -20,3 +20,6 @@ Find the greatest common divisor of given numbers.: Find the greatest common div
 
 # Brain Progression
 What number is missing in the progression?: What number is missing in the progression?
+
+# Brain Prime
+Answer "yes" if given number is prime. Otherwise answer "no".: Answer "yes" if given number is prime. Otherwise answer "no".

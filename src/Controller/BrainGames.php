@@ -42,7 +42,7 @@ class BrainGames
                     $this
                         ->translator
                         ->trans(
-                            '%R"%wrong%" %W is wrong answer ;(. Correct answer was %R"%correct%"%W.%n',
+                            '%R"%wrong%"%W is wrong answer ;(. Correct answer was %R"%correct%"%W.%n',
                             [
                                 '%wrong%' => $userAnswer,
                                 '%correct%' => $game->getCorrectAnswer()

@@ -6,7 +6,7 @@ Hello, %username%!: Привет, %username%!
 Your answer: Ваш ответ
 Correct!: Правильно!
 Congratulations, %username%!: Поздравляю, %username%!
-'%R"%wrong%" %W is wrong answer ;(. Correct answer was %R"%correct%"%W.%n': '%R"%wrong%"%W - неправильный ответ ;(. Правильный ответ:%R"%correct%"%W.%n'
+'%R"%wrong%"%W is wrong answer ;(. Correct answer was %R"%correct%"%W.%n': '%R"%wrong%"%W неправильный ответ ;(. Правильный ответ:%R"%correct%"%W.%n'
 Let's try again, %username%!: Давай еще раз попробуем, %username%!
 
 # Brain Even
@@ -20,3 +20,6 @@ Find the greatest common divisor of given numbers.: Найти наибольш�
 
 # Brain Progression
 What number is missing in the progression?: Какое число отсутствует в прогрессии?
+
+# Brain Prime
+Answer "yes" if given number is prime. Otherwise answer "no".: Ответьте "yes", если данное число простое. В противном случае ответьте "no".
