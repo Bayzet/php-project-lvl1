@@ -8,11 +8,16 @@ use Symfony\Component\Translation\Translator;
 
 class BrainGamesServiceAbstract implements BrainGamesServiceInterface
 {
+    public const DESCRIPTION = null;
+
     protected Game $gameDTO;
 
     public function initializeGameDTO(): Game
     {
-        // TODO: Implement getQuestion() method.
+        $this->gameDTO = new Game();
+        $this->gameDTO->setDescription($this::DESCRIPTION);
+
+        return $this->gameDTO;
     }
 
     public function generateGame(): Game

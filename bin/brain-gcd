@@ -5,7 +5,7 @@
 require_once __DIR__ . '/../config/bootstrap.php';
 
 use Brain\Games\Cli\Controller\BrainGames;
-use Brain\Games\Cli\Service\BrainCalcService;
+use Brain\Games\Cli\Service\BrainGcdService;
 
-$game = new BrainGames($translator, new BrainCalcService());
+$game = new BrainGames($translator, new BrainGcdService());
 $game->run();

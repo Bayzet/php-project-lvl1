@@ -10,13 +10,7 @@ use Brain\Games\Cli\Service\BrainEvenService;
 
 class BrainCalcService extends BrainGamesServiceAbstract
 {
-    public function initializeGameDTO(): Game
-    {
-        $this->gameDTO = new Game();
-        $this->gameDTO->setDescription('What is the result of the expression?');
-
-        return $this->gameDTO;
-    }
+    public const DESCRIPTION = 'What is the result of the expression?';
 
     public function generateGame(): Game
     {

@@ -14,3 +14,6 @@ Answer %R"yes" %Wif the number is even, otherwise answer %R"no"%W.%n: Question %
 
 # Brain Calc
 What is the result of the expression?: What is the result of the expression?
+
+# Brain Gcd
+Find the greatest common divisor of given numbers.: Find the greatest common divisor of given numbers.
