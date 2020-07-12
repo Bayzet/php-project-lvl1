@@ -2,13 +2,15 @@
 Welcome to the Brain Game!: Добро пожаловать в игру Мозг!
 May I have your name?: Можно узнать ваше имя?
 Hello, %username%!: Привет, %username%!
-'Question: %number%': 'Вопрос: %number%'
+'Question: %question%': 'Вопрос: %question%'
 Your answer: Ваш ответ
 Correct!: Правильно!
 Congratulations, %username%!: Поздравляю, %username%!
+'%R"%wrong%" %W is wrong answer ;(. Correct answer was %R"%correct%"%W.%n': '%R"%wrong%"%W - неправильный ответ ;(. Правильный ответ:%R"%correct%"%W.%n'
+Let's try again, %username%!: Давай еще раз попробуем, %username%!
 
 # Brain Even
 Answer %R"yes" %Wif the number is even, otherwise answer %R"no"%W.%n: Ответьте %R"yes"%W, если число четное, в противном случае ответьте %R"no"%W.%n
-'%R"yes" %W is wrong answer ;(. Correct answer was %R"no"%W.%n': '%R"yes"%W - неправильный ответ ;(. Правильный ответ:%R"no"%W.%n'
-'%R"no" %W is wrong answer ;(. Correct answer was %R"yes"%W.%n': '%R"no"%W - неправильный ответ ;(. Правильный ответ:%R"yes"%W.%n'
-Let's try again, %username%!: Давай еще раз попробуем, %username%!
+
+# Brain Calc
+What is the result of the expression?: Каков результат выражения?

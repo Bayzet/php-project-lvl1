@@ -2,38 +2,27 @@
 
 namespace Brain\Games\Cli\Service;
 
+use Brain\Games\Cli\DTO\Game;
 use Brain\Games\Cli\DTO\User;
-use Brain\Games\Cli\Service\Base\BrainGamesServiceInterface;
+use Brain\Games\Cli\Service\Base\BrainGamesServiceAbstract;
 
-class BrainEvenService implements BrainGamesServiceInterface
+class BrainEvenService extends BrainGamesServiceAbstract
 {
-
-
-    public function getRandomNumber(): int
+    public function initializeGameDTO(): Game
     {
-        return rand();
+        $this->gameDTO = new Game();
+        $this->gameDTO->setDescription('Answer %R"yes" %Wif the number is even, otherwise answer %R"no"%W.%n');
+
+        return $this->gameDTO;
     }
 
-    private function isEven(int $number): bool
+    public function generateGame(): Game
     {
-        return $number % 2 ? false : true;
-    }
+        $number = rand(Game::MIN_NUMBER, Game::MAX_NUMBER);
+        $isEven = $number % 2 ? 'no' : 'yes';
+        $this->gameDTO->setQuestion($number);
+        $this->gameDTO->setCorrectAnswer($isEven);
 
-    private function checkAnswer(string $userAnswer): bool
-    {
-        return $userAnswer === 'yes';
-    }
-
-    public function isCorrectAnswer(string $userAnswer, int $number): bool
-    {
-        $result = $this->isEven($number) === $this->checkAnswer($userAnswer);
-
-        return $result;
-    }
-
-    public function increaseSuccess(User &$user)
-    {
-        $currentProgress = $user->getSuccess() + 1;
-        $user->setSuccess($currentProgress);
+        return $this->gameDTO;
     }
 }
