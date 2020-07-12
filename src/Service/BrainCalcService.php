@@ -16,8 +16,8 @@ class BrainCalcService extends BrainGamesServiceAbstract
     {
         $num1 = rand(Game::MIN_NUMBER, Game::MAX_NUMBER);
         $num2 = rand(Game::MIN_NUMBER, Game::MAX_NUMBER);
-        $rand = rand(1, 3);
-        switch ($rand) {
+        $operatorNumber = rand(1, 3);
+        switch ($operatorNumber) {
             case 1:
                 $expression = "${num1} + ${num2}";
                 $correctAnswer = $num1 + $num2;
