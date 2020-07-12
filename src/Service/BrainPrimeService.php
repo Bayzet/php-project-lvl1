@@ -20,9 +20,9 @@ class BrainPrimeService extends BrainGamesServiceAbstract
 
             if ($number % $counter === 0) {
                 return false;
-            } else {
-                return $isPrime(++$counter);
             }
+
+            return $isPrime(++$counter);
         };
         $correctAnswer = $isPrime() ? 'yes' : 'no';
 
