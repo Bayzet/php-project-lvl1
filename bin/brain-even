@@ -2,10 +2,15 @@
 
 <?php
 
-require_once __DIR__ . '/../config/bootstrap.php';
+$globalModeAutoloadPath = __DIR__ . '/../../../autoload.php';
+$devModeAutoloadPath = __DIR__ . '/../vendor/autoload.php';
 
-use Brain\Games\Cli\Controller\BrainGames;
-use Brain\Games\Cli\Service\BrainEvenService;
+if (file_exists($devModeAutoloadPath)) {
+    require_once $devModeAutoloadPath;
+} else {
+    require_once $globalModeAutoloadPath;
+}
 
-$game = new BrainGames($translator, new BrainEvenService());
-$game->run();
+use function Brain\Games\Cli\playEven;
+
+playEven();
