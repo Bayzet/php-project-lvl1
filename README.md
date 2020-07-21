@@ -20,11 +20,16 @@ export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 
 ## Игровой процесс
 ### Игра BrainEven
+[![asciicast](https://asciinema.org/a/c0gE9aG3EKNztOHoiNGQkVn0L.svg)](https://asciinema.org/a/c0gE9aG3EKNztOHoiNGQkVn0L)
 
 ### Игра BrainCalc
+[![asciicast](https://asciinema.org/a/s110OXmeeHxfVzskTYxoQNiW2.svg)](https://asciinema.org/a/s110OXmeeHxfVzskTYxoQNiW2)
 
 ### Игра BrainGcd
+[![asciicast](https://asciinema.org/a/KdhFLZmnPDtzgVSRzbuArbmho.svg)](https://asciinema.org/a/KdhFLZmnPDtzgVSRzbuArbmho)
 
 ### Игра Brain Progression
+[![asciicast](https://asciinema.org/a/a7MITqkEUhvMSctSTxTkKBOc1.svg)](https://asciinema.org/a/a7MITqkEUhvMSctSTxTkKBOc1)
 
 ### Игра Brain Prime
+[![asciicast](https://asciinema.org/a/CrfcljQ9aDr5DICnzOrIyD7Ok.svg)](https://asciinema.org/a/CrfcljQ9aDr5DICnzOrIyD7Ok)
