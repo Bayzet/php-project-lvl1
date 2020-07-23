@@ -1,7 +1,7 @@
 PHP проект Brain Games
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-![CI](https://github.com/Bayzet/php-project-lvl1/workflows/PHP%20CI/badge.svg?branch=downgrade&event=push)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a083952c58c97270bf12/maintainability)](https://codeclimate.com/github/Bayzet/php-project-lvl1/maintainability)
+[![CI](https://github.com/Bayzet/php-project-lvl1/workflows/PHP%20CI/badge.svg?branch=downgrade&event=push)](https://github.com/Bayzet/php-project-lvl1/actions)
 
 
 ## Установка

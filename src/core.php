@@ -20,15 +20,14 @@ function run($gameDescriptionRules, $game)
     for ($round = 0; $round !== MAX_ROUNDS; $round++) {
         [$question, $correctAnswer] = $game();
         line('Question: %s', $question);
-        $userAnswer      = prompt('Your answer');
-        $isCorrectAnswer = $userAnswer == $correctAnswer;
-        if ($isCorrectAnswer) {
-            line('Correct!');
-        } else {
+        $userAnswer = prompt('Your answer');
+        if ($userAnswer != $correctAnswer) {
             line('%R"%s"%W is wrong answer ;(. Correct answer was %R"%s"%W.%n', $userAnswer, $correctAnswer);
             line('Let\'s try again, %s!', $username);
             exit;
         }
+
+        line('Correct!');
     }
 
     line('Congratulations, %s!', $username);
