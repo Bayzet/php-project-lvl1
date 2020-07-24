@@ -11,6 +11,6 @@ if (file_exists($devModeAutoloadPath)) {
     require_once $globalModeAutoloadPath;
 }
 
-use function Brain\Games\Cli\playPrime;
+use function Brain\Games\Cli\Prime\play;
 
-playPrime();
+play();

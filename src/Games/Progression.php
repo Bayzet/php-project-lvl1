@@ -1,6 +1,6 @@
 <?php
 
-namespace Brain\Games\Cli;
+namespace Brain\Games\Cli\Progression;
 
 use function Brain\Games\Core\run;
 
@@ -9,34 +9,34 @@ use const Brain\Games\Core\MAX_NUMBER;
 
 const PROGRESSION_LENGTH = 10;
 
-function generationGameProgression()
+function genRoundData()
 {
     $first = rand(1, 50);
     $difference = rand(1, 50);
 
-    $progressionList = getProgression($first, $difference, PROGRESSION_LENGTH);
+    $progression = makeProgression($first, $difference, PROGRESSION_LENGTH);
 
     $hideNumIndex = rand(0, PROGRESSION_LENGTH - 1);
-    $correctAnswer = $progressionList[$hideNumIndex];
-    $progressionList[$hideNumIndex] = '..';
-    $question = implode(' ', $progressionList);
+    $correctAnswer = $progression[$hideNumIndex];
+    $progression[$hideNumIndex] = '..';
+    $question = implode(' ', $progression);
 
     return [$question, $correctAnswer];
 }
 
-function getProgression($first, $difference, $length)
+function makeProgression($first, $difference, $length)
 {
-    $progressionList = [$first];
+    $progression = [$first];
     for ($i = 0; $length >= $i; $i++) {
-        $progressionList[] = $progressionList[$i] + $difference;
+        $progression[] = $progression[$i] + $difference;
     }
 
-    return $progressionList;
+    return $progression;
 }
 
-function playProgression()
+function play()
 {
-    $rules = 'What number is missing in the progression?';
+    $task = 'What number is missing in the progression?';
 
-    run($rules, fn() => generationGameProgression());
+    run($task, fn() => genRoundData());
 }

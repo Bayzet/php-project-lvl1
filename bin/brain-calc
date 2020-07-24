@@ -11,6 +11,6 @@ if (file_exists($devModeAutoloadPath)) {
     require_once $globalModeAutoloadPath;
 }
 
-use function Brain\Games\Cli\playCalc;
+use function Brain\Games\Cli\Calc\play;
 
-playCalc();
+play();

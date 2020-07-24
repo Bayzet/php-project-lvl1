@@ -11,6 +11,6 @@ if (file_exists($devModeAutoloadPath)) {
     require_once $globalModeAutoloadPath;
 }
 
-use function Brain\Games\Cli\playProgression;
+use function Brain\Games\Cli\Progression\play;
 
-playProgression();
+play();

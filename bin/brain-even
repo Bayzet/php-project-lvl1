@@ -11,6 +11,6 @@ if (file_exists($devModeAutoloadPath)) {
     require_once $globalModeAutoloadPath;
 }
 
-use function Brain\Games\Cli\playEven;
+use function Brain\Games\Cli\Even\play;
 
-playEven();
+play();

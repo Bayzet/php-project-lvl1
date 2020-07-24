@@ -1,6 +1,6 @@
 <?php
 
-namespace Brain\Games\Cli;
+namespace Brain\Games\Cli\Gcd;
 
 use function Brain\Games\Core\run;
 
@@ -9,14 +9,14 @@ use const Brain\Games\Core\MAX_NUMBER;
 
 const MINIMUM_ACCEPTABLE_VALUE = 3;
 
-function generationGameGcd()
+function genRoundData()
 {
     $num1 = rand(MIN_NUMBER, MAX_NUMBER);
     $num2 = rand(MIN_NUMBER, MAX_NUMBER);
     $commonGreatestDivisor = getCommonGreatestDivisor($num1, $num2);
 
     if ($commonGreatestDivisor < MINIMUM_ACCEPTABLE_VALUE) {
-        return generationGameGcd();
+        return genRoundData();
     }
 
     $question = "${num1} ${num2}";
@@ -27,10 +27,8 @@ function generationGameGcd()
 
 function getCommonGreatestDivisor($number1, $number2)
 {
-    $numbers = [$number1, $number2];
-    sort($numbers);
-    $lessNumber = $numbers[0];
-    $moreNumber = $numbers[1];
+    $lessNumber = min([$number1, $number2]);
+    $moreNumber = max([$number1, $number2]);
 
     for ($divisor = $lessNumber; $divisor > 0; $divisor--) {
         if (($lessNumber % $divisor === 0) and  ($moreNumber % $divisor === 0)) {
@@ -39,9 +37,9 @@ function getCommonGreatestDivisor($number1, $number2)
     }
 }
 
-function playGcd()
+function play()
 {
-    $rules = 'Find the greatest common divisor of given numbers.';
+    $task = 'Find the greatest common divisor of given numbers.';
 
-    run($rules, fn() => generationGameGcd());
+    run($task, fn() => genRoundData());
 }

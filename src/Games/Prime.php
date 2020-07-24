@@ -1,36 +1,35 @@
 <?php
 
-namespace Brain\Games\Cli;
+namespace Brain\Games\Cli\Prime;
 
 use function Brain\Games\Core\run;
 
 use const Brain\Games\Core\MIN_NUMBER;
 use const Brain\Games\Core\MAX_NUMBER;
 
-function generationGamePrime()
+function genRoundData()
 {
     $question = rand(MIN_NUMBER, MAX_NUMBER);
-    $correctAnswer = isPrime($question) ? 'yes' : 'no';
+    $isPrime = function ($number, $counter = 2) use (&$isPrime) {
+        if ($counter > $number / 2) {
+            return true;
+        }
+
+        if ($number % $counter === 0) {
+            return false;
+        }
+
+        return $isPrime($number, ++$counter);
+    };
+
+    $correctAnswer = $isPrime($question) ? 'yes' : 'no';
 
     return [$question, $correctAnswer];
 }
 
-function isPrime($number, $counter = 2)
+function play()
 {
-    if ($counter > $number / 2) {
-        return true;
-    }
+    $task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-    if ($number % $counter === 0) {
-        return false;
-    }
-
-    return isPrime($number, ++$counter);
-}
-
-function playPrime()
-{
-    $rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
-    run($rules, fn() => generationGamePrime());
+    run($task, fn() => genRoundData());
 }

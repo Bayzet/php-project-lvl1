@@ -1,18 +1,21 @@
 <?php
 
-namespace Brain\Games\Cli;
+namespace Brain\Games\Cli\Calc;
 
 use function Brain\Games\Core\run;
 
 use const Brain\Games\Core\MIN_NUMBER;
 use const Brain\Games\Core\MAX_NUMBER;
 
-function generationGameCalc()
+const OPERATORS = ['+','-','*'];
+
+function genRoundData()
 {
-    $operators = ['+','-','*'];
     $num1 = rand(MIN_NUMBER, MAX_NUMBER);
     $num2 = rand(MIN_NUMBER, MAX_NUMBER);
-    $operator = $operators[rand(0, 2)];
+    $lastOperatorsKey = array_key_last(OPERATORS);
+    $randomOperatorIndex = rand(0, $lastOperatorsKey);
+    $operator = OPERATORS[$randomOperatorIndex];
     $question = "${num1} ${operator} ${num2}";
     $correctAnswer = computeArithmeticOperation($num1, $num2, $operator);
 
@@ -28,12 +31,14 @@ function computeArithmeticOperation($number1, $number2, $operator)
             return $number1 - $number2;
         case '*':
             return $number1 * $number2;
+        default:
+            throw new \Exception("Unknown operator: '${operator}'");
     }
 }
 
-function playCalc()
+function play()
 {
-    $rules = 'What is the result of the expression?';
+    $task = 'What is the result of the expression?';
 
-    run($rules, fn() => generationGameCalc());
+    run($task, fn() => genRoundData());
 }

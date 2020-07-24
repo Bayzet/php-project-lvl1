@@ -9,10 +9,10 @@ const MAX_ROUNDS = 3;
 const MIN_NUMBER = 1;
 const MAX_NUMBER = 100;
 
-function run($gameDescriptionRules, $game)
+function run($task, $game)
 {
     line('Welcome to the Brain Game!');
-    line($gameDescriptionRules);
+    line($task);
     line();
     $username = prompt('May I have your name?');
     line('Hello, %s!', $username);
