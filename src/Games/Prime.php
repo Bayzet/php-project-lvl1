@@ -10,7 +10,18 @@ use const Brain\Games\Core\MAX_NUMBER;
 function genRoundData()
 {
     $question = rand(MIN_NUMBER, MAX_NUMBER);
-    $isPrime = function ($number, $counter = 2) use (&$isPrime) {
+    $correctAnswer = isPrime($question) ? 'yes' : 'no';
+
+    return [$question, $correctAnswer];
+}
+
+function isPrime($number)
+{
+    if ($number < 2) {
+        return false;
+    }
+
+    $iter = function ($counter = 2) use (&$iter, $number) {
         if ($counter > $number / 2) {
             return true;
         }
@@ -19,12 +30,10 @@ function genRoundData()
             return false;
         }
 
-        return $isPrime($number, ++$counter);
+        return $iter(++$counter);
     };
 
-    $correctAnswer = $isPrime($question) ? 'yes' : 'no';
-
-    return [$question, $correctAnswer];
+    return $iter();
 }
 
 function play()
